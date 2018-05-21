@@ -10,9 +10,11 @@ This demo demonstrates:
 - The use of classes to create components-like structures
 - The use of a separate template files per component
 - The use of a separate styles.css per component
-- How [we can use ES6 modules in some browser](https://caniuse.com/#feat=es6-module)s 
-- How we can somehow mount components into specific parts of our DOM
-- A very basic implemenation of a Publish/Subscribe pattern that serves to communicate componentsnow
+- How [we can use ES6 modules in some browsers](https://caniuse.com/#feat=es6-module)
+- How we can _mount_ components into specific parts of our DOM
+- A very basic implemenation of a Publish/Subscribe pattern that serves to communicate components
+
+> Note: The performance of a real project w/ this structure would be horrible but i think it's interesting to understand better some structures used in some popular frameworks like React
 
 ```
 .
@@ -49,7 +51,9 @@ This demo demonstrates:
 Clone the repo and add a `js/config.js` w/ your PUBLIC_KEY
 
 ```
-export const PUBLIC_KEY = "b782c35caf4fb24ac96d9f4c832e3120"
+export const PUBLIC_KEY = "<%YOUR_PUBLIC_KEY%>"
 ```
+
+> Replace `<%YOUR_PUBLIC_KEY%>` w/ your Public Key got from your Marvel Developer Account
 
 Launch a local server and add your local url (usually `localhost`) to your authorized referrers in your Marvel Developer Account
